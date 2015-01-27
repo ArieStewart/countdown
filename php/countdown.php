@@ -6,7 +6,10 @@ if (PHP_SAPI !== 'cli') {
 
 function countdown($seconds)
 {
-    // ...
+     for($x = $seconds; $x > 0; $x--) {
+     	echo $x.". . . \n";
+     	sleep(1);
+     }
 }
 
 countdown(5);
